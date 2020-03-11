@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "aws-sdk": "^2.634.0",
+    "aws-sdk": "^2.637.0",
     "serverless-apigw-binary": "^0.4.4"
   },
   "dependencies": {

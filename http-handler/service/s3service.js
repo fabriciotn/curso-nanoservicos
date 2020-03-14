@@ -1,5 +1,4 @@
-import { v4 as uuidv4 } from 'uuid';
-
+const uuid = require('uuid');
 const AWS = require('aws-sdk')
 
 AWS.config.update({
@@ -7,10 +6,10 @@ AWS.config.update({
 })
 
 const S3 = new AWS.S3()
-const BUCKET = 'nanoservices-imagens'
+const BUCKET = 'nanoservicos-img'
 
 const upload = body => {
-    const id = uuidv4()
+    const id = uuid.v4()
     return new Promise((res, rej) => {
         S3.putObject({
             Bucket: BUCKET,
